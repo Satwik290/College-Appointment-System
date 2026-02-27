@@ -3,6 +3,7 @@ import cors from "cors";
 import dotenv from "dotenv";
 import cookies from "cookie-parser";
 import authRoutes from "./modules/auth/auth.routes.js";
+import availabilityRoutes from "./modules/availability/availability.routes.js";
 // import { errorHandler } from "./middleware/error.middleware.js";
 
 dotenv.config();
@@ -20,6 +21,7 @@ app.get("/api/health", (_req, res) => {
 });
 
 app.use("/api/auth", authRoutes);
+app.use("/api/availability", availabilityRoutes); 
 
 // app.use(errorHandler);
 
