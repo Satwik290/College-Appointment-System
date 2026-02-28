@@ -24,9 +24,9 @@ export const login = async (req: Request, res: Response) => {
     const user = await loginUser(validateUser.email, validateUser.password);
     res.cookie('token', user.token, {
       httpOnly: true,
-      secure: false, // true in production (HTTPS)
+      secure: false, 
       sameSite: 'strict',
-      maxAge: 24 * 60 * 60 * 1000, // 1 day
+      maxAge: 24 * 60 * 60 * 1000, 
     });
 
     res.status(200).json({
@@ -44,7 +44,7 @@ export const login = async (req: Request, res: Response) => {
 export const logout = (req:Request, res:Response) => {
   res.clearCookie("token", {
     httpOnly: true,
-    secure: false, // true in production
+    secure: false, 
     sameSite: "strict"
   });
 

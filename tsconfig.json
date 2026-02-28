@@ -18,7 +18,7 @@
     "strict": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
-    "noUncheckedIndexedAccess": true, // Safety for array/object lookups
+    "noUncheckedIndexedAccess": true, 
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
 
@@ -27,7 +27,7 @@
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
     "resolveJsonModule": true,
-    "incremental": true, // Speeds up subsequent builds
+    "incremental": true, 
     "tsBuildInfoFile": "./dist/.tsbuildinfo"
   },
   "include": ["src/**/*", "src/server.ts"],

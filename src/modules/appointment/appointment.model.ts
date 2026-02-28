@@ -25,7 +25,7 @@ const appointmentSchema = new Schema<IAppointment>(
       type: Schema.Types.ObjectId,
       ref: "Availability",
       required: true,
-      unique: true // 🔥 prevents double booking
+      unique: true 
     },
     status: {
       type: String,

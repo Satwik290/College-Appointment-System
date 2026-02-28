@@ -9,7 +9,7 @@ export const globalErrorHandler = (
   res: Response,
   next: NextFunction
 ) => {
-  console.error("🔥 Error:", err);
+  console.error("Error:", err);
 
   if (err instanceof ZodError) {
     return res.status(400).json({
