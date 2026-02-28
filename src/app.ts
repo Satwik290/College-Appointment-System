@@ -5,8 +5,7 @@ import cookies from "cookie-parser";
 import authRoutes from "./modules/auth/auth.routes.js";
 import availabilityRoutes from "./modules/availability/availability.routes.js";
 import appointmentRoutes from "./modules/appointment/appointment.routes.js";
-
-// import { errorHandler } from "./middleware/error.middleware.js";
+import { globalErrorHandler } from "./middlewares/error.middleware.js";
 
 dotenv.config();
 
@@ -26,6 +25,6 @@ app.use("/api/auth", authRoutes);
 app.use("/api/availability", availabilityRoutes); 
 app.use("/api/appointments", appointmentRoutes);
 
-// app.use(errorHandler);
+app.use(globalErrorHandler);
 
 export default app;
