@@ -52,7 +52,7 @@ Create a `.env` file in the root directory:
 
 ```env
 PORT=5000
-MONGO_CONNECTION_STRING=mongodb+srv://username:password@cluster.mongodb.net/college-appointment-system
+MONGO_CONNECTION_STRING= 
 NODE_ENV=development
 JWT_SECRET=your_super_secret_jwt_key_min_32_chars
 ```
